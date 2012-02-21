@@ -1,5 +1,5 @@
 <?php
- /* 
+/**
  * @package     pH7.Framework
  * @subpackage  Service
  * @author      SORIA Pierre-Henry

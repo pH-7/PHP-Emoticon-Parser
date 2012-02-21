@@ -1,5 +1,5 @@
 <?php
- /*
+/**
  * @desc        Simple example of what our library can do.
  * @author      SORIA Pierre-Henry
  * @email       pierrehs@hotmail.com

@@ -1,5 +1,5 @@
 <?php 
- /* 
+/**
  * @package     pH7
  * @author      SORIA Pierre-Henry
  * @email       pierrehs@hotmail.com
