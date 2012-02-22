@@ -1,2 +1,14 @@
 This script shows a simple but powerful parser and highly customizable built in PHP.
 It incorporates some classes of my framework that I am currently building (pH7 framework).
+
+
+###### SERVER REQUIREMENTS ######
+
+----- Operating System -----  
+Linux, BSD, Solaris, Windows or Mac
+
+----- Web Server -----
+Apache, IIS, CGI, FastCGI or ISAPI
+
+----- Application Server -----
+PHP 5.3.0 or higher
