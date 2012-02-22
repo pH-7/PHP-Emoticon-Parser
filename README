@@ -8,7 +8,7 @@ It incorporates some classes of my framework that I am currently building (pH7 f
 Linux, BSD, Solaris, Windows or Mac
 
 ----- Web Server -----
-Apache, IIS, CGI, FastCGI or ISAPI
+Apache, CGI, FastCGI, IIS or ISAPI
 
 ----- Application Server -----
 PHP 5.3.0 or higher
