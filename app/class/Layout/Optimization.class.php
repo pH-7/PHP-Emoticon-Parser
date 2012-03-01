@@ -15,7 +15,7 @@ namespace PH7\Framework\Layout;
 class Optimization {
    
   /**
-   * @desc Data URI Function base64
+   * @desc Data URIs base64 encoding for images
    * @param string $sFile
    * @return string Returns format: data:[<MIME-type>][;base64],<data>
    */
