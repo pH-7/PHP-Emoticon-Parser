@@ -26,7 +26,7 @@ class Emoticon {
     private function __construct() {}
 
     /**
-     * @desc Gets the list of emoticons
+     * @desc Gets the list of emoticons.
      * @return array
      */
     public static function gets() {
@@ -34,36 +34,36 @@ class Emoticon {
     }
 
     /**
-     * @desc Gets the path of emoticon
+     * @desc Gets the path of emoticon.
      * @param string $sName
-     * @return emoticon path
+     * @return emoticon path.
      */
     public static function getPath($sName) {
         return PH7_PATH_STATIC . PH7_IMG . self::DIR . $sName . self::EXT;
     }
 
     /**
-     * @desc Gets the URL of emoticon
+     * @desc Gets the URL of emoticon.
      * @param string $sName
-     * @return emoticon URL
+     * @return emoticon URL.
      */
     public static function getUrl($sName) {
         return PH7_URL_STATIC . PH7_IMG . self::DIR . $sName . self::EXT;
     }
 
     /**
-     * @desc Gets the name of emoticon
+     * @desc Gets the name of emoticon.
      * @param array $aVal
-     * @return emoticon name
+     * @return emoticon name.
      */
     public static function getName($aVal) {
         return $aVal[1];
     }
 
     /**
-     * @desc Gets the emoticon code
+     * @desc Gets the emoticon code.
      * @param array $aVal
-     * @return emoticon code
+     * @return emoticon code.
      */
     public static function getCode($aVal) {
         return $aVal[0];
@@ -71,7 +71,7 @@ class Emoticon {
 
     /**
      * @clone
-     * @desc Block cloning
+     * @desc Block cloning.
      * @access private
      */
     private function __clone() {}
