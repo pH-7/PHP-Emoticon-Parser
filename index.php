@@ -4,13 +4,13 @@
  * @author      SORIA Pierre-Henry
  * @email       pierrehs@hotmail.com
  * @link        http://github.com/pH-7
- * @copyright   Copyright pH7 Script All Rights Reserved.
+ * @copyright   (c) 2012-2013, Pierre-Henry Soria. All Rights Reserved.
  * @license     CC-BY - http://creativecommons.org/licenses/by/3.0/
- * @version     $Id: index.php 2012-02-21 pierrehs $
+ * @version     $Id: index.php 2013-02-04 pierrehs $
  */
- 
+
 define('PH7', true);
- 
+
 // This file is a simple example of what our library can do.
 
 require 'app/Init.php';

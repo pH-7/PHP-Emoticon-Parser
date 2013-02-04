@@ -5,73 +5,96 @@
  * @author      SORIA Pierre-Henry
  * @email       pierrehs@hotmail.com
  * @link        http://github.com/pH-7
- * @copyright   Copyright pH7 Script All Rights Reserved.
+ * @copyright   (c) 2012-2013, Pierre-Henry Soria. All Rights Reserved.
  * @license     CC-BY - http://creativecommons.org/licenses/by/3.0/
- * @version     $Id: Emoticon.class.php 2012-02-21 pierrehs $
+ * @version     $Id: Emoticon.class.php 2013-02-04 pierrehs $
  */
 
 namespace PH7\Framework\Service;
 defined('PH7') or exit('Restricted access');
 
-class Emoticon {
+/**
+ * @class Abstract Class
+ */
+abstract class Emoticon
+{
 
     const DIR = 'smile/', EXT = '.gif';
 
-
     /**
-     * @constructor
-     * @desc Private constructor to prevent instantiation of class since it is a private class.
+     * Private constructor to prevent instantiation of class since it is a private class.
+     *
      * @access private
      */
     private function __construct() {}
 
     /**
-     * @desc Gets the list of emoticons.
+     * Gets the list of emoticons.
+     *
+     * @access protected
+     * @static
      * @return array
      */
-    public static function gets() {
-        return include PH7_PATH_APP . 'config/emoticon.php';
+    protected static function gets()
+    {
+        return include PH7_PATH_APP_CONFIG . 'emoticon.php';
     }
 
     /**
-     * @desc Gets the path of emoticon.
+     * Gets the path of emoticon.
+     *
+     * @access protected
+     * @static
      * @param string $sName
-     * @return emoticon path.
+     * @return Emoticon path.
      */
-    public static function getPath($sName) {
-        return PH7_PATH_STATIC . PH7_IMG . self::DIR . $sName . self::EXT;
+    protected static function getPath($sName)
+    {
+        return PH7_PATH_STATIC . PH7_IMG . static::DIR . $sName . static::EXT;
     }
 
     /**
-     * @desc Gets the URL of emoticon.
+     * Gets the URL of emoticon.
+     *
+     * @access protected
+     * @static
      * @param string $sName
-     * @return emoticon URL.
+     * @return Emoticon URL.
      */
-    public static function getUrl($sName) {
-        return PH7_URL_STATIC . PH7_IMG . self::DIR . $sName . self::EXT;
+    protected static function getUrl($sName)
+    {
+        return PH7_URL_STATIC . PH7_IMG . static::DIR . $sName . static::EXT;
     }
 
     /**
-     * @desc Gets the name of emoticon.
+     * Gets the name of emoticon.
+     *
+     * @access protected
+     * @static
      * @param array $aVal
-     * @return emoticon name.
+     * @return Emoticon name.
      */
-    public static function getName($aVal) {
+    protected static function getName($aVal)
+    {
         return $aVal[1];
     }
 
     /**
-     * @desc Gets the emoticon code.
+     * Gets the emoticon code.
+     *
+     * @access protected
+     * @static
      * @param array $aVal
-     * @return emoticon code.
+     * @return Emoticon code.
      */
-    public static function getCode($aVal) {
+    protected static function getCode($aVal)
+    {
         return $aVal[0];
     }
 
     /**
-     * @clone
-     * @desc Block cloning.
+     * Block cloning.
+     *
      * @access private
      */
     private function __clone() {}
